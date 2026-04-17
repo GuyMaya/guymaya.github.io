@@ -5,6 +5,5 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   site: 'https://guymaya.github.io',
-  base: '/mayaguy_site/',
   output: 'static'
 });
