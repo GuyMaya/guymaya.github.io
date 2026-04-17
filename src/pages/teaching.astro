@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/NavBar.astro";
+import "../styles/teaching.css";
+---
+
+<BaseLayout title="Teaching">
+  <Navbar />
+
+  <main class="page-teaching">
+
+    <!-- HEADER -->
+    <section class="teaching-header">
+      <h1>Teaching</h1>
+      <p>
+        I teach mathematics, and machine learning at university level,
+        with a focus on practical applications and scientific rigor.
+      </p>
+    </section>
+
+    <!-- COURSES -->
+    <section class="teaching-list">
+
+      <!-- COURSE 1 -->
+      <div class="course-card">
+        <div class="course-content">
+          <h2>Data processing</h2>
+          <p class="course-meta">Master 1 • 15h</p>
+          <p class="course-desc">
+            Introduction to deep learning for data processing in astronomy.
+          </p>
+
+          <ul class="course-list">
+            <li>Neural Networks</li>
+            <li>Gradient descent</li>
+            <li>Astrophysics data</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COURSE 2 -->
+      <div class="course-card">
+        <div class="course-content">
+          <h2>Calculus 1</h2>
+          <p class="course-meta">Bachelor 1 • 39h</p>
+          <p class="course-desc">
+            Tutorials on derivatives, limits, and integrals. Study of functions.
+          </p>
+
+          <ul class="course-list">
+            <li>Derivatives</li>
+            <li>Limits</li>
+            <li>Integrals</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</BaseLayout>

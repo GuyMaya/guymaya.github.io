@@ -1,0 +1,30 @@
+---
+import "../styles/home.css";
+import Navbar from "../components/NavBar.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import profilePic from '../assets/profil.png';
+---
+
+<BaseLayout title="Guy Maya">
+  <Navbar />
+  <main class="hero">
+    <!-- 👇 background vidéo -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="/mayaguy_site/simulation.mp4" type="video/mp4">
+    </video>
+
+    <div class="container hero-content">
+      <img class="hero-photo" src={profilePic.src} alt="Guy Maya" />
+
+      <div class="hero-text">
+        <p class="hero-kicker">I am a</p>
+
+        <h1 class="hero-title">
+          <strong>PhD student in </strong><br />
+          <strong>Planetary Science</strong> &<br />
+          <strong>Applied Statistics</strong>.
+        </h1>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

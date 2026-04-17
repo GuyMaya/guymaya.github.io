@@ -1,0 +1,143 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0B0F14;
+  color: #E6EDF3;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 8%;
+  overflow: hidden;
+}
+
+/* 🎥 Vidéo en background */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 65%; /* 👈 décale vers la gauche */
+  transform: translate(-50%, -50%);
+
+  min-width: 100%;
+  min-height: 100%;
+
+  object-fit: cover;
+  z-index: 0;
+  opacity: 1;
+}
+
+/* 🔳 Overlay sombre pour lisibilité */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 15, 20, 0.6);
+  z-index: 1;
+}
+
+/* Contenu au-dessus */
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Image */
+.hero-photo {
+  width: 130px;
+  height: 160px;
+  margin-bottom: 1rem;
+}
+
+/* Kicker */
+.hero-kicker {
+  color: #7DD3FC;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+/* Titre */
+.hero-title {
+  font-size: 2.6rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.hero-title strong {
+  color: #E6EDF3;
+}
+
+/* Ligne décorative */
+.hero-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, #7DD3FC, #38BDF8);
+  margin-top: 12px;
+}
+
+/* Boutons */
+.link-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+
+  background-color: #38BDF8;
+  color: #0B0F14;
+
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.link-btn:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+/* Bouton secondaire */
+.link-btn--secondary {
+  background-color: transparent;
+  border: 1px solid #7DD3FC;
+  color: #7DD3FC;
+}
+
+.link-btn--secondary:hover {
+  background-color: rgba(125, 211, 252, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  /* vidéo centrée sur mobile */
+  .hero-video {
+    left: 50%;
+    opacity: 0.25;
+  }
+}

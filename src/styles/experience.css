@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  background: #0B0F14;
+  color: #E6EDF3;
+  font-family: system-ui, sans-serif;
+}
+
+/* Page */
+.page-experience {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+.teaching-header {
+  margin-bottom: 3rem;
+}
+
+.teaching-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #7DD3FC; /* bleu glacier */
+}
+
+.teaching-header p {
+  color: #9CA3AF;
+  max-width: 600px;
+}
+
+/* Liste / Cards */
+.teaching-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.course-card {
+  background: #111827;
+  border: 1px solid rgba(125, 211, 252, 0.15); /* bleu subtil */
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.course-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(56,189,248,0.12), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.course-card:hover::before {
+  opacity: 1;
+}
+
+.course-card:hover {
+  border-color: #38BDF8; /* bleu */
+  transform: translateY(-5px);
+}
+
+.course-content h2 {
+  margin-top: 0;
+  color: #E6EDF3;
+  font-size: 1.6rem;
+}
+
+.course-meta {
+  font-size: 0.85rem;
+  color: #7DD3FC;
+  margin-bottom: 0.5rem;
+}
+
+.course-desc {
+  color: #D1D5DB;
+  margin-bottom: 1rem;
+}
+
+.course-list {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.course-list li {
+  color: #9CA3AF;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.course-list li::marker {
+  color: #38BDF8;
+}
+
+/* Liens */
+.exp-link {
+  color: #7DD3FC;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.exp-link:hover {
+  color: #0EA5E9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-experience {
+    padding: 60px 15px;
+  }
+}

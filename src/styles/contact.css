@@ -1,0 +1,120 @@
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  background-color: #0B0F14;
+  color: #E6EDF3;
+  font-family: system-ui, sans-serif;
+}
+
+/* ===== PAGE ===== */
+.page-contact {
+  min-height: calc(100vh - 60px); /* hauteur réelle sans navbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* ===== CONTAINER ===== */
+.contact-container {
+  text-align: center;
+}
+
+/* ===== TITRE ===== */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #7DD3FC;
+}
+
+.contact-sub {
+  color: #9CA3AF;
+  margin-bottom: 2rem;
+}
+
+/* ===== CARD ===== */
+.contact-card {
+  background-color: #111827;
+  border: 1px solid rgba(125, 211, 252, 0.15);
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(56,189,248,0.12), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+}
+
+.contact-card:hover::before {
+  opacity: 1;
+}
+
+.contact-card:hover {
+  border-color: #38BDF8;
+}
+
+/* ===== ITEMS ===== */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(125, 211, 252, 0.08);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+/* ===== ICONS ===== */
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #7DD3FC; /* force couleur visible */
+}
+
+/* ===== LABEL ===== */
+.contact-label {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ===== LINKS ===== */
+.contact-item a {
+  color: #E6EDF3;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+  color: #38BDF8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 1.5rem;
+  }
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

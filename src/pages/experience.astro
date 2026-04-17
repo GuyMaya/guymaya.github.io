@@ -1,0 +1,119 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/NavBar.astro";
+import "../styles/experience.css"; 
+import OCA from "../assets/OCA.jpg";
+---
+
+<BaseLayout title="Experience">
+  <Navbar />
+
+  <main class="page-experience">
+
+    <!-- HEADER -->
+    <section class="teaching-header">
+      <h1>Professional Experience</h1>
+    </section>
+
+    <!-- EXPERIENCE PRO -->
+    <section class="teaching-list">
+
+      <!-- EXPERIENCE 1 -->
+      <div class="course-card">
+        <div class="course-content">
+          <h2>PhD in Planetary Science & Applied Statistics</h2>
+          <p class="course-meta">Université Côte d’Azur, Observatoire de la Côte d’Azur, CNRS, Laboratoire Lagrange • Nice, France</p>
+          <p class="course-meta">Université Côte d’Azur, INRIA, CNRS, Laboratoire J.A. Dieudonné, Maasai • Nice, France</p>
+          <p class="course-desc">
+            I work on the determination of <strong>asteroid families</strong> in the <strong>Main Belt</strong>. I am developing <strong>unsupervised machine learning methods</strong>, specifically a <strong>mixture model</strong>, to identify these families using proper orbital elements.
+          </p>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE 2 -->
+      <div class="course-card">
+        <div class="course-content">
+          <h2>Research Engineer in Statistics and Python Development</h2>
+          <p class="course-meta">Université Côte d’Azur, INRIA, CNRS, Laboratoire J.A. Dieudonné, Maasai • Nice, France</p>
+          <p class="course-desc">
+            Worked on the development of a Python package&nbsp;
+            <a href="https://cassiopy.readthedocs.io/en/main/index.html" target="_blank" rel="noopener" class="exp-link">
+              Cassiopy
+            </a>
+            &nbsp;for clustering using Skew-t mixture models. It offers powerful tools for working with skew-t distributions, including sample generation, density calculation, and more.
+          </p>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE 3 -->
+      <div class="course-card">
+        <div class="course-content">
+          <h2>Internship Data science for astronomy</h2>
+          <p class="course-meta">Université Côte d’Azur, Observatoire de la Côte d’Azur, CNRS, Laboratoire Lagrange • Nice, France</p>
+          <p class="course-meta">Université Côte d’Azur, INRIA, CNRS, Laboratoire J.A. Dieudonné, Maasai • Nice, France</p>          
+        </div>
+      </div>
+
+      <!-- EXPERIENCE 4 -->
+      <div class="course-card">
+        <div class="course-content">
+          <h2>Internship Deep learning for Cosmology</h2>
+          <p class="course-meta">Université Aix Marseille, CPPM, • Marseille, France</p>
+          <ul class="course-list">
+            <li>Preparation & data cleaning of 1 million LSST telescope images and metadata.</li>
+            <li>Development of image classification algorithms using CNN models in TensorFlow to identify supernovae.</li>
+            <li>Utilisation of simulated samples to enhance model performance.</li>
+            <li>Results clustering using dimensionality reduction (t-SNE, UMAP) and Gaussian Mixture models.</li>
+            <li>Data visualization using Python libraries (Matplotlib, Bokeh).</li>
+            <li>Presentation of results to an international panel of physics researchers.</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section class="teaching-header">
+      <h1>FORMATION</h1>
+      <p>
+        Overview of my academic background.
+      </p>
+    </section>
+    <!-- FORMATION -->
+    <section class="teaching-list" style="margin-top:3rem;">
+
+      <!-- DU -->
+      <div class="course-card">
+        <div class="course-content">
+          <h2>DU Big Data, Data Science et Analyse de risque sous python</h2>
+          <p class="course-meta"> Université de Montpellier • Montpellier, France</p>
+          <p class="course-desc">
+          </p>
+        </div>
+      </div>
+
+      <!-- MASTER -->
+      <div class="course-card">
+        <div class="course-content">
+          <h2>Master Degree in Physique Subatomique et Cosmologie</h2>
+          <p class="course-meta"> Université Grenoble Alpes • Grenoble, France</p>
+          <p class="course-desc">
+          </p>
+        </div>
+      </div>
+
+      <!-- BACHELOR -->
+      <div class="course-card">
+        <div class="course-content">
+          <h2>Bachelor Degree in Physics</h2>
+          <p class="course-meta"> Université Clermont Auvergne • Clermont-Ferrand, France</p>
+          <p class="course-desc">
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</BaseLayout>

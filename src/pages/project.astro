@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/NavBar.astro";
+import "../styles/project.css";
+import cassiopyLogo from "../assets/Cassiopy_logo.png";
+---
+
+<BaseLayout title="Projects">
+  <Navbar />
+
+  <main class="page-project">
+
+    <!-- HEADER -->
+    <section class="project-header">
+      <h1>Projects</h1>
+      <p>
+        Overview of my main research and software projects, with links and descriptions.
+      </p>
+    </section>
+
+    <!-- PROJECT LIST -->
+    <section class="project-list">
+
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <div class="project-logo">
+            <img src={cassiopyLogo.src} alt="Cassiopy logo" />
+        </div>
+        <div class="project-content">
+            <h2>Cassiopy</h2>
+            <p class="project-desc">
+            Python package dedicated to clustering using skew-t mixture models. It offers powerful tools for working with skew-t distributions, including sample generation, density calculation, and more.
+            </p>
+            <p class="project-links">
+            <div class="project-links">
+                <a href="https://cassiopy.readthedocs.io/en/main/index.html" target="_blank" class="project-badge">
+                    📄 Documentation
+                </a>
+                <a href="https://github.com/GuyMaya/Cassiopy" target="_blank" class="project-badge">
+                    ⌥ GitHub
+                </a>
+            </div>
+            </p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</BaseLayout>
