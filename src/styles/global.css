@@ -5,10 +5,19 @@
   right: 0;
   background-color: #0B0F14;
   padding: 0.75rem 1rem;
-  border-radius: 0;
   z-index: 1000;
 }
 
+/* bouton burger caché sur desktop */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* menu normal desktop */
 .navbar ul {
   display: flex;
   justify-content: flex-end;
@@ -37,10 +46,29 @@
   fill: white;
 }
 
+/* 📱 MOBILE UNIQUEMENT */
 @media (max-width: 768px) {
-  .navbar ul {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #0B0F14;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar ul {
+    justify-content: flex-start;
   }
 }
