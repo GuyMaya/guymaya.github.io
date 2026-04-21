@@ -48,15 +48,9 @@
 
 /* 📱 MOBILE UNIQUEMENT */
 @media (max-width: 1000px) {
-  body {
-    background: blue !important;
-  }
-  .menu-toggle {
-    display: block;
-  }
 
   .nav-links {
-    display: none;
+    display: none !important;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -67,10 +61,14 @@
   }
 
   .nav-links.active {
-    display: flex;
+    display: flex !important;
   }
 
   .navbar ul {
-    justify-content: flex-start;
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 }
