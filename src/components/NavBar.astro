@@ -27,15 +27,13 @@
 </nav>
 
 <script is:inline>
-  window.addEventListener('DOMContentLoaded', () => {
-    const btn = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.nav-links');
+  const btn = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.nav-links');
 
-    if (!btn || !menu) return;
-
+  if (btn && menu) {
     btn.addEventListener('click', () => {
       menu.classList.toggle('active');
     });
-  });
+  }
 </script>
 
