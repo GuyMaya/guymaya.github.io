@@ -26,12 +26,16 @@
   </ul>
 </nav>
 
-<script client:load>
-  const btn = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.nav-links');
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-links');
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('active');
+    if (!btn || !menu) return;
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
   });
 </script>
 
