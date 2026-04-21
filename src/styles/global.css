@@ -48,7 +48,9 @@
 
 /* 📱 MOBILE UNIQUEMENT */
 @media (max-width: 1000px) {
-
+  body {
+    background: blue !important;
+  }
   .menu-toggle {
     display: block;
   }
