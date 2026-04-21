@@ -25,11 +25,11 @@
   </ul>
 </nav>
 
-<script>
+<script is:inline>
   const btn = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.nav-links');
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('active');
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('active');
   });
 </script>
