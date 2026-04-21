@@ -64,10 +64,6 @@
     display: flex !important;
   }
 
-  .navbar ul {
-    display: none !important;
-  }
-
   .menu-toggle {
     display: block;
   }
