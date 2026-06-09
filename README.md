@@ -1,46 +1,46 @@
-# Astro Starter Kit: Basics
+# guymaya.github.io
+ 
+Personal academic website of **Guy Maya**, PhD student in Planetary Science & Applied Statistics at Université Côte d'Azur.
+ 
+🌐 **Live site:** [https://guymaya.github.io](https://guymaya.github.io)
+ 
+---
+ 
+## About
+ 
+This site serves as a personal portfolio presenting my research, academic background, projects, and teaching activities. It covers my work on asteroid family identification in the Main Belt using unsupervised machine learning methods.
+ 
+---
+ 
+## Pages
+ 
+- **Home** — Introduction and overview
+- **Experience** — Research positions, internships and academic background
+- **Projects** — Research software and open-source contributions
+- **Teaching** — Teaching activities
+- **Contact** — Get in touch
+---
+ 
+## Featured Project
+ 
+### [Cassiopy](https://github.com/GuyMaya/Cassiopy)
+Python package dedicated to clustering using skew-t mixture models. Offers tools for working with skew-t distributions including sample generation and density calculation.
+ 
+📄 [Documentation](https://cassiopy.readthedocs.io/en/main/index.html)
+ 
+---
+ 
+## Research
+ 
+My PhD research focuses on the determination of **asteroid families** in the **Main Belt**. I develop unsupervised machine learning methods — specifically mixture models — to identify these families using proper orbital elements.
+ 
+**Institutions:**
+- Université Côte d'Azur, Observatoire de la Côte d'Azur, CNRS — Laboratoire Lagrange
+- Université Côte d'Azur, INRIA, CNRS — Laboratoire J.A. Dieudonné, Maasai
+---
 
-```sh
-npm create astro@latest -- --template basics
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+ 
+## Connect
+ 
+- 🔗 [LinkedIn](https://www.linkedin.com/in/maya-guy-msomg/)
+- 🐙 [GitHub](https://github.com/GuyMaya)
