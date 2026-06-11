@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  background: #0B0F14;
+  color: #E6EDF3;
+  font-family: system-ui, sans-serif;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page-research {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.research-header {
+  margin-bottom: 3rem;
+}
+
+.research-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #7DD3FC;
+}
+
+.research-header p {
+  color: #9CA3AF;
+  max-width: 600px;
+}
+
+/* =========================
+   LIST
+========================= */
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* =========================
+   CARD (project-style)
+========================= */
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  background: #111827;
+  border: 1px solid rgba(125, 211, 252, 0.15);
+  border-radius: 16px;
+
+  padding: 1.5rem 2rem;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+/* glow hover */
+.research-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(56,189,248,0.12),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.research-card:hover::before {
+  opacity: 1;
+}
+
+.research-card:hover {
+  border-color: #38BDF8;
+  transform: translateY(-5px);
+}
+
+/* =========================
+   TEXT CONTENT
+========================= */
+
+.research-meta {
+  font-size: 0.85rem;
+  color: #7DD3FC;
+}
+
+.research-card h3 {
+  margin: 0;
+  color: #E6EDF3;
+  font-size: 1.4rem;
+}
+
+.research-authors {
+  color: #9CA3AF;
+  font-size: 0.9rem;
+}
+
+.research-desc {
+  color: #D1D5DB;
+}
+
+/* =========================
+   ACTIONS (BADGES STYLE PROJECT)
+========================= */
+
+.research-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+/* DOI / HAL / Poster badge */
+.research-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  background: rgba(56, 189, 248, 0.07);
+
+  color: #7DD3FC;
+  font-size: 0.82rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+  letter-spacing: 0.02em;
+}
+
+.research-link:hover {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: #38BDF8;
+  color: #E6EDF3;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   ABSTRACT (DETAILS)
+========================= */
+
+.research-details {
+  margin-top: 0.2rem;
+}
+
+/* IMPORTANT: make summary look exactly like badge */
+.research-details summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  background: rgba(56, 189, 248, 0.07);
+
+  color: #7DD3FC;
+  font-size: 0.82rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  user-select: none;
+
+  list-style: none;
+  transition: all 0.2s ease;
+}
+
+.research-details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* hover same as link */
+.research-details summary:hover {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: #38BDF8;
+  color: #E6EDF3;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   ABSTRACT BOX
+========================= */
+
+.research-abstract {
+  margin-top: 1rem;
+  padding: 1rem;
+
+  border-left: 2px solid #38BDF8;
+  background: rgba(17, 24, 39, 0.5);
+
+  color: #D1D5DB;
+  border-radius: 8px;
+
+  line-height: 1.6;
+}

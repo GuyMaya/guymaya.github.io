@@ -113,3 +113,32 @@ body {
     padding: 60px 15px;
   }
 }
+
+.course-card.with-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Logo */
+.course-logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .course-card.with-logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .course-logo {
+    width: 60px;
+    height: 60px;
+  }
+}

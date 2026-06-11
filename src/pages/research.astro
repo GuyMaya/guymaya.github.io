@@ -1,0 +1,166 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/NavBar.astro";
+import "../styles/research.css";
+import cassiopyLogo from "../assets/Cassiopy_logo.png";
+---
+
+<BaseLayout title="Research">
+  <Navbar />
+
+  <main class="page-research">
+
+    <header class="research-header">
+      <h1>Research</h1>
+    </header>
+
+    {/*
+    <section class="research-section">
+      <h2>Publications</h2>
+
+      <div class="research-list">
+
+        <article class="research-card">
+          <div class="research-meta">
+            Journal • 2026
+          </div>
+
+          <h3>
+            Title of the publication
+          </h3>
+
+          <p class="research-authors">
+            Maya G., Smith J., Doe A.
+          </p>
+
+          <p class="research-desc">
+            Short description of the article and its main contribution.
+          </p>
+
+          <div class="research-actions">
+
+            <a href="#" class="research-link" target="_blank">
+              DOI
+            </a>
+
+            <details class="research-details">
+              <summary class="research-link">
+                Abstract
+              </summary>
+
+              <div class="research-abstract">
+                <p>
+                  Abstract goes here...
+                </p>
+              </div>
+            </details>
+
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+    */}
+
+    <section class="research-section">
+      <h2>Conferences & Talks</h2>
+
+      <div class="research-list">
+
+        <!-- EPSC -->
+        <article class="research-card">
+
+          <div class="research-meta">
+            EPSC 2025 • Helsinki, Finland
+          </div>
+
+          <h3>
+            Unveiling Hidden Structures in the Main Belt: A Probabilistic Framework for Asteroid Families
+          </h3>
+
+          <p class="research-authors">
+            Maya Guy, Benoit Carry, Vincent Vandewalle
+          </p>
+
+          <p class="research-desc">
+            Probabilistic model-based clustering approach for asteroid family identification.
+          </p>
+
+          <div class="research-actions">
+
+            <a
+              href="https://doi.org/10.5194/epsc-dps2025-321"
+              class="research-link"
+              target="_blank"
+            >
+              Poster
+            </a>
+
+            <details class="research-details">
+              <summary class="research-link">
+                Abstract
+              </summary>
+
+              <div class="research-abstract">
+                <p>
+                    The identification of asteroid families is a key question in planetary sciences (Novaković et al. 2022), offering crucial insights into the collisional and dynamical history of the asteroid Main Belt (MB). These families, originating from the fragmentation of parent bodies due to catastrophic collisions, form dense clusters in orbital proper elements space. Over time, the non-gravitational Yarkovsky effect induces a semi-major axis drift, producing the characteristic V-shaped patterns in the (semi-major axis, absolute magnitude) plane.Current techniques for family identification suffer from several limitations. The most widely used approach, the Hierarchical Clustering Method (HCM, Zappala et al. 1990), does not account for the presence of a background population, leading to overestimated family cores and the omission of their extended wings (often referred to as halos, Dermott et al. 2018). Furthermore, no families older than ∼2Gyr have been confidently identified using this method (Spoto et al. 2015). Additionally, HCM assumes that families are non-overlapping in the proper element space, an unrealistic assumption as young familiesmay overlap with older, more diffuse, families.To overcome some of the HCM limitation, the V-shape method was developed (Bolin et al. 2017). Being based on the print of Yarkovsky-induced spreading, it successfully allowed to find very old families (Delbo et al. 2017; Delbo et al. 2019). While recent combined approaches have incorporated the background population into family detection frameworks (Ferrone et al. 2023), they still lack an intrinsic mechanism for handling overlapping families and do not yield probabilistic membership lists.In this study, we propose a new probabilistic approach for identifying asteroid families in the MB, using model-based clustering. We model the observed population of the MB as a mixture of skewed-t distributions for eccentricity, inclination, and absolute magnitude, ST(xijμkj,σkj,λkj,νkj), j∈{1,2,3} coupled with a gaussian distribution for semi-major axis that explicitly depends on absolute magnitude N(xi4μk4+ck100.2xi3cosγs,σ2k4) which captures the Yarkovsky-driven semi-major axis evolution. The parameters θkj, which define the shape and orientation of each cluster along each dimension (e, i, a, H), and mixture proportions αk of the model are estimated using the Expectation-Maximization (EM) algorithm. This model also includes a uniform background component for the primordial asteroid population.This flexible approach accommodates anisotropic and overlapping family structures, and provides a probabilistic membership assignments, enabling a more nuanced and robust classification of asteroid families.We will present the methodology and results from simulated datasets to demonstrate the performance and advantages of this approach.
+                </p>
+              </div>
+            </details>
+
+          </div>
+
+        </article>
+
+        <!-- SOPHIA -->
+        <article class="research-card">
+
+          <div class="research-meta">
+            Sophia Summit 2025 • Biot, France
+          </div>
+
+          <h3>
+            From Fragments to Families: Asteroid Clustering
+          </h3>
+
+          <p class="research-authors">
+            Maya Guy, Benoit Carry, Vincent Vandewalle
+          </p>
+
+          <p class="research-desc">
+            Probabilistic model-based clustering approach for asteroid family identification.
+          </p>
+
+          <div class="research-actions">
+
+            <a
+              href="https://hal.science/hal-05453426v1"
+              class="research-link"
+              target="_blank"
+            >
+              HAL
+            </a>
+
+            <details class="research-details">
+              <summary class="research-link">
+                Abstract
+              </summary>
+
+              <div class="research-abstract">
+                <p>
+                    This study provides a new probabilistic approach for identifying asteroid families in the Main Belt (MB), addressing limitations of traditional methods like the Hierarchical Clustering Method (HCM). These methods often overestimate family cores, miss extended wings (halos), and struggle with identifying older families and overlapping structures. The proposed model uses skewed-t distributions for eccentricity, inclination, and absolute magnitude, coupled with a Gaussian distribution for semi-major axis evolution influenced by the Yarkovsky effect. This flexible approach accommodates anisotropic and overlapping family structures, providing probabilistic membership assignments for a more nuanced classification. We will present the methodology and results from simulated datasets to demonstrate the performance and advantages of this approach.                </p>
+                </p>
+              </div>
+            </details>
+
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+</BaseLayout>
